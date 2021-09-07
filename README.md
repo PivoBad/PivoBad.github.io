@@ -1,2 +1,2 @@
 # PivoBad.github.io
-WWW
+W
