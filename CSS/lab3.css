@@ -1,0 +1,107 @@
+body {
+	background-color: #FDD5B1;
+	
+}
+
+/*Шапка*/
+
+.header {
+	background-color: #ffffff;
+	margin: 1%;
+	height: 90px;
+	max-height: 10.5%;
+	overflow: hidden;
+	text-align: center;
+
+}
+/*Головне меню*/
+
+.menu {
+	background-color: #ffffff;
+	margin: 1%;
+	height: 90px;
+	max-height: 10.5%;
+	overflow: hidden;
+	text-align: center;
+
+
+}
+div p{
+	font-size: 40px;
+	margin-top: 17px;
+	margin-bottom: 17px;
+	
+}
+
+/*Содержимое*/
+
+
+.line{
+	margin: 15px;
+	width: 1px;
+}
+
+.left-block {
+        background-color: #fff;
+        position: absolute;
+        width: 34.4%;
+        height: 134px;
+        left: 1.5%;
+
+}
+
+.big-block {
+	background-color: #fff;
+	position: absolute;
+	width: 34.4%;
+	height: 651px;
+	left: 36.8%;
+
+	
+}
+
+.right-block {
+	background-color: #fff;
+	position: absolute;
+	width: 26.3%;
+	height: 134px;
+	left: 72.1%;
+	
+}
+
+.medium-block {
+	background-color: #fff;
+	position: absolute;
+	width: 34.4%;
+	height: 200px;
+	left: 1.5%;
+	
+
+}
+
+.medium-block1 {
+	background-color: #fff;
+	position: absolute;
+	width: 26.3%;
+	height: 200px;
+	left: 72.1%;
+	
+}
+
+.line1 {
+	margin-top: 165px;
+}
+
+
+.line2 {
+	margin-top: 316px;
+}
+
+.line3{
+	margin-top: 467px;
+
+}
+
+
+
+
