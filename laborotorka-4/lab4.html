@@ -1,0 +1,36 @@
+<!-- 1) посилання, яке відкривається на новій сторінці браузера, містить підказку, змінюється під час наведення курсора, змінює вигляд курса; 
+
+2) створити на сторінці кнопку (button) яка також є і кнопкою-посиланням. оцінюється вигляд кнопки;
+
+3) зробити красивий напис - "Кафедра інформатики" з використанням кольору, не стандартних шрифтів, тіні, прозорості та іншого;
+
+4) створити деяке повідомлення, яке спливає після натискання на посилання чи кнопку;
+
+5) додати на сторінку геометричну фігуру засобами тільки css (без канви): трикутник, трапецію, коло чи щось інше.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="lab4.css">
+	<meta charset="utf-8">
+	<title>Css-асорті</title>
+</head>
+<body>
+	<h1>Кафедра інформатики</h1>
+	<div class="dws">
+		<a href="lab4-1.html" class="butt">Натиснути</a>
+	</div>
+
+	<div id="zatemnenie">
+      <div id="okno" class="emoj">
+        &#128521<br>
+        <a href="#" class="close">Зачинити вікно</a>
+      </div>
+    </div>
+     
+    <a href="#zatemnenie" class="text">Віконце з'явися</a>
+
+</body>
+</html>
