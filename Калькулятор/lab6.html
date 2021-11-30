@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Квадратні рівняння</title>
+	<link rel="stylesheet" href="lab6.css">
+</head>
+<body>
+	<h2>Початкові дані:</h2>
+	<p>Квадратне рівняння - це рівняння виду ax<sup>2</sup> + bx + c = 0, де коефіцієнти a, b і c - довільні числа, причому a ≠ 0.</p>
+	<form action="">
+		<input type="number" id="a" placeholder="a"> x<sup>2</sup> + 
+		<input type="number" id="b" placeholder="b"> x + 
+		<input type="number" id="c" placeholder="c"> = 0
+		<br><br><input type="button" onclick="prog();" value="Розвязати">
+	</form>
+	<div id="otvet">
+		<h2>Відповідь:</h2>
+		<pre id="result"></pre>
+	</div>
+	<script src="lab6.js"></script>
+</body>
+</html>
