@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tanks>
+	<tank group="ЛТ">
+		<name>БТ-5</name>
+		<year>1933</year>
+		<developer>ХПЗ</developer>
+	</tank>
+	<tank group="ЛТ">
+		<name>БМП-1</name>
+		<year>1966</year>
+		<developer>ГСКБ-2</developer>
+	</tank>
+	<tank group="ЛТ">
+		<name>БМП-3</name>
+		<year>1987</year>
+		<developer>Курганмашзавод</developer>
+	</tank>
+	<tank group="СТ">
+		<name>Т-34 (1940)</name>
+		<year>1940</year>
+		<developer>ХКБМ</developer>
+	</tank>
+	<tank group="СТ">
+		<name>Т-55А</name>
+		<year>1958</year>
+		<developer>ХКБМ</developer>
+	</tank>
+	<tank group="СТ">
+		<name>Т-80У</name>
+		<year>1985</year>
+		<developer>Кировский завод</developer>
+	</tank>
+	<tank group="ТТ">
+		<name>КВ-1</name>
+		<year>1939</year>
+		<developer>ЦКБ-2</developer>
+	</tank>
+	<tank group="ТТ">
+		<name>ИС-2</name>
+		<year>1943</year>
+		<developer>ЧКЗ</developer>
+	</tank>	
+	<tank group="ТТ">
+		<name>Об'єкт 279</name>
+		<year>1957</year>
+		<developer>ЛКЗ</developer>
+	</tank>
+</tanks>
