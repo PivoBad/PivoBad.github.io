@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Парсинг XML</title>
+<script category="text/javascript">
+
+function loadXML(file) {
+ try { 
+ var req = new XMLHttpRequest();
+ req.open("GET", file, false);
+ req.send(null);
+ return req.responseXML;
+ }
+ catch (e) {
+
+ try {
+ var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+ xmlDoc.async = false;
+ xmlDoc.load(file);
+ return xmlDoc;
+ }
+ catch (e) {
+ alert(e.message);
+ return null;
+ }
+ }
+} 
+
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="box">
+	<a name="ЛТ"  onmouseover="choose(this)" style="color: #000000;">Легкі танки</a> <br /> 
+	<a name="СТ"  onmouseover="choose(this)" style="color: #000000;" >Средні танки</a> <br /> 
+	<a name="ТТ"  onmouseover="choose(this)" style="color: #000000;">Тяжкі танки</a> <br /> 
+</div>
+
+
+<div id="data">
+    
+	<br /> 
+	<div >
+	    <div name="name0" id="name0"></div>
+	    <div name="year0" id="year0"></div>
+	    <div name="developer0" id="developer0"></div>
+	</div>
+	<br /> <br />
+	<div>
+	    <div name="name1" id="name1"></div>
+	    <div name="year1" id="year1"></div>
+	    <div name="developer1" id="developer1"></div>
+	</div>
+	<br /> <br />
+	<div>
+	    <div name="name2" id="name2"></div>
+	    <div name="year2" id="year2"></div>
+	    <div name="developer2" id="developer2"></div>
+	</div>
+	<br />
+
+</div>
+
+
+<script category="text/javascript">
+
+var xmlDoc = loadXML("https://PivoBad.github.io/tanks.xml");
+
+function choose(coloredLink) {
+ var group = coloredLink.name;
+ var index = 0;
+ var divNum = 3; 
+
+
+
+ for (var i = 0; i < xmlDoc.getElementsByTagName("tank").length; i++) {
+
+ var name = "name" + index;
+ var year = "year" + index;
+ var developer = "developer" + index;
+ var data = document.getElementById('data');
+
+ if (xmlDoc.getElementsByTagName("tank")
+ [i].attributes.getNamedItem("group").nodeValue == group) { 
+
+
+ document.getElementById(name).innerHTML = xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+ document.getElementById(year).innerHTML = xmlDoc.getElementsByTagName("year")[i].childNodes[0].nodeValue;
+ document.getElementById(developer).innerHTML = xmlDoc.getElementsByTagName("developer")[i].childNodes[0].nodeValue;
+
+ index++;
+ 
+  data.style.fontFamily = "'EB Garamond'";
+  data.style.borderRadius = "10px 10px 10px 10px";
+  data.style.transition =  ".4s linear";
+   
+    if (group == "ЛТ") {
+    data.style.backgroundColor = "rgb(202, 204, 208)";
+    data.style.boxShadow = "0px 6px 14px azure";
+    }
+
+    if (group == "СТ") {
+    data.style.backgroundColor = "rgb(104, 172, 191)";
+    data.style.boxShadow = "0px 6px 14px azure";
+    }
+
+    if (group == "ТТ") {
+    data.style.backgroundColor = "rgb(85, 86, 6)";
+    data.style.boxShadow = "0px 5px 15px azure"
+    } 
+
+ }
+
+}
+
+ for (var temp = index; temp < divNum; temp++) {
+
+ name = "name" + temp;
+ year = "year" + temp;
+ developer = "developer" + temp;
+
+ document.getElementById(name).innerHTML = "";
+ document.getElementById(year).innerHTML = "";
+ document.getElementById(category).innerHTML = "";
+
+ }
+
+}
+</script>
+</body>
+</html>
