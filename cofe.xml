@@ -12,7 +12,7 @@
     </coffee>
     <coffee group="LA">
         <name>BARISTA COFFEE</name>
-        <address>Республіканська вулиця, 61Б</address>
+        <address>вулиця Республіканська, 61Б</address>
         <price>36</price>
     </coffee>
     <coffee group="CA">
@@ -27,7 +27,7 @@
     </coffee>
     <coffee group="CA">
         <name>BARISTA COFFEE</name>
-        <address>Республіканська вулиця, 61Б</address>
+        <address>вулиця Республіканська, 61Б</address>
         <price>30</price>
     </coffee>
     <coffee group="RA">
@@ -42,7 +42,7 @@
     </coffee>
     <coffee group="RA">
         <name>BARISTA COFFEE</name>
-        <address>Республіканська вулиця, 61Б</address>
+        <address>вулиця Республіканська, 61Б</address>
         <price>48</price>
     </coffee>
 </cofe>
